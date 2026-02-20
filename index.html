@@ -31,20 +31,37 @@
 
     <main class="w-[80%] mx-auto">
         <!-- btn section -->
-        <div class="flex gap-10">
+        <div class="flex gap-8">
             <button class="bg-black text-white px-5 py-2 rounded-lg" id="all-filter-btn">All</button>
             <button class="bg-gray-300 px-5 py-2 rounded-lg" id="thriving-filter-btn">Thriving</button>
             <button class="bg-gray-300 px-5 py-2 rounded-lg" id="struggling-filter-btn">Struggling</button>
         </div>
 
         <!-- card section -->
-         <section id="all-card">
+         <section id="allCard">
             <!-- card -->
-             <div>
+             <div class="flex justify-between my-10 border p-8 rounded-lg">
                 <!-- main part -->
-                <div></div>
+                <div class="space-y-6">
+                    <div>
+                        <P  class="plantName">Plant Name</P>
+                        <p class="lastName">Latin Name</p>
+                    </div>
+                    <div class="flex gap-5">
+                        <p class="light bg-gray-200 px-5 py-2 rounded">Bright Indicate</p>
+                        <p class="water bg-gray-200 px-5 py-2 rounded">Weekly</p>
+                    </div>
+                    <p class="status font-bold">Not applicable</p>
+                    <p class="notes text-gray-500">Now leaf unfurling by the east window.</p>
+                    <div class="flex gap-8">
+                        <button class="thriving-btn bg-green-200 px-4 py-2 rounded-lg">Thrive</button>
+                        <button class="struggling-btn bg-red-200 px-4 py-2 rounded-lg">Struggle</button>
+                    </div>
+                </div>
                 <!-- btn part -->
-                <div></div>
+                <div>
+                    <button class="btn-delete bg-red-200 text-red-500 px-4 py-2 rounded-lg">Delete</button>
+                </div>
              </div>
 
          </section>
